@@ -1,0 +1,21 @@
+.row{
+	width:100%;
+
+}
+.col-3{
+	width:25%;
+	float: left;
+}
+/*.col-3 ul{
+	list-style-type: none;
+
+}*/
+.col-6{
+	background-color:purple;
+	width:40%;
+	float:left;
+	/*margin-left:30%;*/
+}
+img{
+	width:100%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my page</title>
+	<style>
+		.alignn{
+			margin-left:40%;
+			margin-top:10%;
+		}
+		body{
+			background-image:url('bgimg2.jpg');
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function fun(){
+
+			var x=document.getElementById('name').value;
+			console.log(x);
+			alert(x);
+			var y=document.getElementById('e-mail').value;
+			console.log(y);
+			alert(y);
+			var p=document.getElementById('number').value;
+			console.log(p);
+			alert(p);
+			var z=document.getElementById('date').value;
+			console.log(z);
+			alert(z);
+		}
+	</script>
+	<div class="alignn">
+Name:<input type="text" id="name"><br><br>
+e-mail:<input type="e-mail" id="e-mail"><br><br>
+ph.no:<input type="number" id="number"><br><br>
+date<input type="date" id="date"><br><br>
+<button onclick="fun()">submit</button>
+</div>
+</body>
+</html>

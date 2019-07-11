@@ -1,0 +1,12 @@
+nav ul.left{
+	display:inline;
+	background-color:grey;
+}
+.left{
+	list-style:none;
+	float:left;
+}
+ul.left li.right{
+	float:right;
+	list-style:none;
+}

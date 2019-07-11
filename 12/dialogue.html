@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function try(){
+			var txt;
+			if (confirm("Press a button!")) {
+				txt = "You pressed OK!";
+			} else {
+				txt = "You pressed Cancel!";
+			}
+			document.getElementById("demo").innerHTML = txt;
+		}
+	</script>
+	<title>dialogue boxes</title>
+</head>
+<body><fieldset>
+	<p>LOGIN</p>
+	name:<input type="text"><br><br>
+	password:<input type="password"><br><br>
+	<button onclick="try()">login</button><br>
+</fieldset>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Confirm Box</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

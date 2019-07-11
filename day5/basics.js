@@ -1,0 +1,8 @@
+function kamal()
+{
+	var x, y, z;
+	x = 5;  
+	y = 6;
+	z = x + y;
+	alert(z);
+}

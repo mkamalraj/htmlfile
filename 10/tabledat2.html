@@ -1,0 +1,72 @@
+<!-- <html>
+    <head>
+        <title>For:Loop</title>
+    </head>
+    
+    <body>
+    <script type="text/javascript">
+    var i = 0;
+    var newhtml = "<table width=50 border=1><tr>";
+    var a=[{movie:"kgf",status:"hit",director:"abc"},
+               {movie:"majili",status:"semihit",director:"siva"},
+               {movie:"rangasthalam",status:"blockbuster",director:"sukumar"},
+               {movie:"intelligent",status:"flop",director:"def"},
+               {movie:"chitralahari",status:"average",director:"xyz"}];
+
+    for (var i=0;i<=a.length-1;i++){
+        
+         
+    
+        newhtml = newhtml + "<td>" +a[i][j].movie+ "</td>";+"<td>" +a[i][j].status+ "</td>";"<td>" +a[i][j].director+ "</td>" +"<br>";
+        }
+    
+
+    newhtml = newhtml + "</tr></table>"
+    document.write(newhtml);
+    </script>
+    </body>
+    </html> -->
+    <html>
+    <head>
+        <title>data</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                table-layout: fixed;
+                width:30%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Movie</th>
+                <th>status</th>
+                <th>director</th>
+            </tr>
+            <tr>
+                <td>{{a.movie}}</td>
+            </tr>
+            <tr>
+                <td>{{a.status}}</td>
+            </tr>
+            <tr>
+                <td>{{a.direcor}}</td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+           var a=[{movie:"kgf",status:"hit",director:"abc"},
+           {movie:"majili",status:"semihit",director:"siva"},
+           {movie:"rangasthalam",status:"blockbuster",director:"sukumar"},
+           {movie:"intelligent",status:"flop",director:"def"},
+           {movie:"chitralahari",status:"average",director:"xyz"}];
+         // for (var i=0;i<=a.length;i++){
+         //     var newhtml = "<table border><tr>";
+         //     newhtml = newhtml + "<td>" +a[i].movie+ "</td>" + "<td>" +a[i].status+ "</td>" + "<td>" +a[i].director+ "</td>"
+         //     newhtml = newhtml + "</tr></table>"
+         //     document.write(newhtml);
+         // }
+     </script>
+ </body>
+ </html>

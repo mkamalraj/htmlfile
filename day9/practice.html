@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{
+			margin-left: 40%;
+			margin-top: 10%;
+			border:1px solid grey;
+			margin-right: 38%;
+			box-shadow: 2px 2px 2px 2px;
+
+		}
+		span{
+			color: red;
+		}
+        button{
+        	margin-left:80px; 
+        	margin-bottom: 20px;
+        }
+	</style>
+
+	<title>forms</title>
+	<script>
+		function fun(){
+			var x=document.getElementById('username').value;
+			var y=document.getElementById('password').value;
+			if(x == ""){
+				document.getElementById('user1').innerHTML="incorrect";
+			}
+
+			if(y.length<10){
+				document.getElementById('password1').innerHTML="incorrect";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h1 align="center">LOGIN</h1><br>
+		NAME:<input type="text" id="username"><br><span id="user1"></span><br>
+		<br>
+		PASSWORD:<input type="password" id="password"><span id="password1"></span><br><br>
+		<button onclick="fun()">submit</button>
+	</div>
+
+</body>
+</html>

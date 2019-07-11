@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>challenge</title>
+</head>
+<body>
+	<p align="center">challenge</p>
+	<script type="text/javascript">
+	/* challenge 1
+	var m_m=80;
+	var j_m=70;
+	var m_h=2;
+	var j_m=1.2;
+	var m_bmi=80/(2*2);//20
+	var j_bmi=70/(1.2*1.2);//48.6111
+	if (m_bmi>j_bmi) {
+		console.log("m_bmi is highest"+" "+m_bmi )
+	}
+	else{
+		console.log("j_bmi is highest"+" "+j_bmi )
+	}
+	*/
+	/*challenge2
+	var john_avg=(89+120+103)/3;
+	var mike_avg=(116+94+123)/3;
+	var mary_avg=(97+134+105)/3;
+	if (john_avg>mike_avg && john_avg>mike_avg) {
+		console.log("john is winner and score is"+" "+john_avg);
+	}
+	else if(mike_avg>john_avg && mike_avg>mary_avg){
+		console.log("mike is winner and score is"+" "+mike_avg);
+	}
+	else if(mary_avg>john_avg && mary_avg>mike_avg){
+		console.log("mary is winner and score is"+" "+mary_avg);
+	}
+    else{
+    	console.log("match is draw");
+    }
+    */
+    function tip_cal(bill){
+    	var tip;
+    	if(bill<50)
+    	{
+    		tip=0.2;
+    	}
+    	else if(bill<50 && bill>200)
+    	{
+    		tip=0.15;
+    	}
+    	else{
+    		tip=0.1;
+    	}
+    	return bill*tip;
+    }
+    var bills=[124,48,268];
+    var tips= [tip_cal(bills[0]),tip_cal(bills[1]),tip_cal(bills[2])];
+    var final =[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+    console.log(tips,final);
+</script>
+</body>
+</html>

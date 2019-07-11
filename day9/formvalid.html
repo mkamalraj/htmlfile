@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>form validation</title>
+ 	<style>
+ 		.login{
+ 			background-color: orange;
+ 			font-size: 30px;
+ 			width: 100%;
+ 		}
+
+ 		
+ 	</style>
+ 	<script type="text/javascript">
+ 		function isvalid(){
+ 		var a = document.getElementById('username').value;
+ 		// console.log(a);
+ 		var b = document.getElementById('mobileno').value;
+ 		// console.log(b);
+ 		var c = document.getElementById('Email').value;
+ 		// console.log(c);
+ 		var d = document.getElementById('PASSWORD').value;
+ 		// console.log(d);
+ 		var e = document.getElementById('getpassword').value;
+ 		// console.log(e);
+        if(a== " " || b.length!=10 || d!=e){
+        	alert("details are mismatched");
+        }
+
+        else
+        {
+        	window.location="https://www.google.com";
+                
+        }
+         // if(a == ""){
+         // 	document.getElementById('nerror').innerHTML="please enter correct name";
+         // }
+    
+         // if(b != 10)
+         // {
+         // 	document.getElementById('merror').innerHTML="please enter correct mobile no";
+         // }
+       
+         // if(d != e){
+         // 	document.getElementById('cperror').innerHTML="please enter correct password";
+   
+         // }
+         // else{
+         // 	alert("all details are correct")
+         // }
+ 		}
+ 	</script>
+ </head>
+ <body>
+ 	<div class="login">
+ <h1>signup </h1>
+NAME<input type="text" id="username"><br><span id="nerror" style="color:red"></span><br>
+MOBILE no<input type="number" id="mobileno"><br><span id="merror" style="color:red"></span><br>
+Email<input type="Email" id="Email"><br><span id="eerror"style="color:red"></span><br>
+PASSWORD<input type="PASSWORD" id="PASSWORD"><br><span id="perror" style="color:red"></span><br>
+CONFIRM PASSWORD<input type="PASSWORD" id="getpassword" ><br><span id="cperror" style="color:red"></span><br>
+<button onclick="isvalid()">submit</button>
+</div>
+
+
+ </body>
+ </html>
